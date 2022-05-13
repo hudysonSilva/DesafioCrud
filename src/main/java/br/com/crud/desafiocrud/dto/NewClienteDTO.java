@@ -62,6 +62,10 @@ public class NewClienteDTO {
         this.saldo = saldo;
     }
 
+    public Double getSaldo() {
+        return saldo;
+    }
+
     public String getCelular() {
         return celular;
     }
