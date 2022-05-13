@@ -13,7 +13,7 @@ import javax.validation.constraints.Pattern;
 public class NewClienteDTO {
 
     //@Pattern(regexp = "([A-ZÀ-Ÿ][A-zÀ-ÿ']*\\s||[A-ZÀ-Ÿ][A-zÀ-ÿ']*\\s[A-ZÀ-Ÿ][A-zÀ-ÿ']*){1,20}\\S", message = "Nome Invalido")
-    @Pattern(regexp = "([A-ZÀ-Ÿ][A-zÀ-ÿ']*\\s||[A-ZÀ-Ÿ][A-zÀ-ÿ']*\\s[a-zà-ÿ][A-zÀ-ÿ']*||[A-ZÀ-Ÿ][A-zÀ-ÿ']*\\\\s[A-ZÀ-Ÿ][A-zÀ-ÿ']*){1,20}\\S", message = "Nome Invalido")
+    //@Pattern(regexp = "([A-ZÀ-Ÿ][A-zÀ-ÿ']*\\s||[A-ZÀ-Ÿ][A-zÀ-ÿ']*\\s[a-zà-ÿ][A-zÀ-ÿ']*||[A-ZÀ-Ÿ][A-zÀ-ÿ']*\\\\s[A-ZÀ-Ÿ][A-zÀ-ÿ']*){1,20}\\S", message = "Nome Invalido")
     @NotBlank(message = "Preenchimento obrigatorio")
     @Length(max = 120, message = "Quantidade de caracteres deve ser no maximo 120")
     private String nome;
@@ -33,7 +33,7 @@ public class NewClienteDTO {
 
     private Double patrimonio;
 
-    private Integer celular;
+    private String celular;
 
     private Integer agencia;
 

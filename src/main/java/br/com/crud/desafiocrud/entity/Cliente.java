@@ -35,7 +35,7 @@ public class Cliente {
     private Double patrimonio;
 
     @Column
-    private Integer celular;
+    private String celular;
 
     @Column
     private Integer agencia;

@@ -14,6 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 
 public class ClienteInsertValidator implements ConstraintValidator<ClienteInsert, NewClienteDTO> {
 
@@ -118,13 +119,13 @@ public class ClienteInsertValidator implements ConstraintValidator<ClienteInsert
             erros.add(new FieldMessage("cpf", "CPF já existente"));
         }
 
-//        //Validacao de nome
-//        String[] splitNome = objDto.getNome().toUpperCase(Locale.ROOT).split("\\s");
-//        for (int i = 0; splitNome.length > i; i++) {
-//            if (!splitNome[i].matches("[A-ZÀ-Ÿ]*")) {
-//                erros.add(new FieldMessage("nome", "ERRO NO NOME"));
-//            }
-//        }
+        //Validacao de nome
+      String[] splitNome = objDto.getNome().toUpperCase(Locale.ROOT).split("\\s");
+        for (int i = 0; splitNome.length > i; i++) {
+            if (!splitNome[i].matches("[A-ZÀ-Ÿ]*")) {
+                erros.add(new FieldMessage("nome", "ERRO NO NOME"));
+            }
+        }
 
         for (FieldMessage e : erros) {
             context.disableDefaultConstraintViolation();
