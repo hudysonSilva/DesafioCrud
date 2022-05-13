@@ -52,7 +52,7 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(Integer idCliente, String cpf, String nome, String email, Date dataNascimento, Double renda, Double patrimonio, Integer celular, Integer agencia, Integer conta, Integer senha, Integer saldo) {
+    public Cliente(Integer idCliente, String cpf, String nome, String email, Date dataNascimento, Double renda, Double patrimonio, String celular, Integer agencia, Integer conta, Integer senha, Integer saldo) {
         this.idCliente = idCliente;
         this.cpf = cpf;
         this.nome = nome;
@@ -91,11 +91,11 @@ public class Cliente {
         this.patrimonio = patrimonio;
     }
 
-    public Integer getCelular() {
+    public String getCelular() {
         return celular;
     }
 
-    public void setCelular(Integer celular) {
+    public void setCelular(String celular) {
         this.celular = celular;
     }
 
