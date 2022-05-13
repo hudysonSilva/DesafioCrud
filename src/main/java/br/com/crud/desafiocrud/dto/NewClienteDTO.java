@@ -41,13 +41,15 @@ public class NewClienteDTO {
 
     private Integer senha;
 
+    private Integer saldo;
+
 
 
 
     public NewClienteDTO() {
     }
 
-    public NewClienteDTO(String nome, String cpf, String email, String dataNascimento, Double renda, Double patrimonio, Integer celular, Integer agencia, Integer conta, Integer senha) {
+    public NewClienteDTO(String nome, String cpf, String email, String dataNascimento, Double renda, Double patrimonio, Integer celular, Integer agencia, Integer conta, Integer senha, Integer saldo) {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
@@ -58,6 +60,15 @@ public class NewClienteDTO {
         this.agencia = agencia;
         this.conta = conta;
         this.senha = senha;
+        this.saldo = saldo;
+    }
+
+    public Integer getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(Integer saldo) {
+        this.saldo = saldo;
     }
 
     public Double getRenda() {

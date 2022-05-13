@@ -46,10 +46,13 @@ public class Cliente {
     @Column
     private Integer senha;
 
+    @Column
+    private Integer saldo;
+
     public Cliente() {
     }
 
-    public Cliente(Integer idCliente, String cpf, String nome, String email, Date dataNascimento, Double renda, Double patrimonio, Integer celular, Integer agencia, Integer conta, Integer senha) {
+    public Cliente(Integer idCliente, String cpf, String nome, String email, Date dataNascimento, Double renda, Double patrimonio, Integer celular, Integer agencia, Integer conta, Integer senha, Integer saldo) {
         this.idCliente = idCliente;
         this.cpf = cpf;
         this.nome = nome;
@@ -61,6 +64,15 @@ public class Cliente {
         this.agencia = agencia;
         this.conta = conta;
         this.senha = senha;
+        this.saldo = saldo;
+    }
+
+    public Integer getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(Integer saldo) {
+        this.saldo = saldo;
     }
 
     public Double getRenda() {
