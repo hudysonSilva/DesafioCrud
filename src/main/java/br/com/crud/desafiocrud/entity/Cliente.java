@@ -44,15 +44,15 @@ public class Cliente {
     private Integer conta;
 
     @Column
-    private Integer senha;
+    private String senha;
 
     @Column
-    private Integer saldo;
+    private Double saldo;
 
     public Cliente() {
     }
 
-    public Cliente(Integer idCliente, String cpf, String nome, String email, Date dataNascimento, Double renda, Double patrimonio, String celular, Integer agencia, Integer conta, Integer senha, Integer saldo) {
+    public Cliente(Integer idCliente, String cpf, String nome, String email, Date dataNascimento, Double renda, Double patrimonio, String celular, Integer agencia, Integer conta, String senha, Double saldo) {
         this.idCliente = idCliente;
         this.cpf = cpf;
         this.nome = nome;
@@ -67,11 +67,19 @@ public class Cliente {
         this.saldo = saldo;
     }
 
-    public Integer getSaldo() {
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public Double getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(Integer saldo) {
+    public void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
 
@@ -113,14 +121,6 @@ public class Cliente {
 
     public void setConta(Integer conta) {
         this.conta = conta;
-    }
-
-    public Integer getSenha() {
-        return senha;
-    }
-
-    public void setSenha(Integer senha) {
-        this.senha = senha;
     }
 
     public Integer getIdCliente() {
