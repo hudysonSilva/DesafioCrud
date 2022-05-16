@@ -78,6 +78,8 @@ public class ClienteService {
         clienteModel.setPatrimonio(clienteDto.getPatrimonio());
         clienteModel.setCelular(clienteDto.getCelular());
         clienteModel.setCelular(clienteDto.getCelular());
+        clienteModel.setSenha(clienteDto.getSenha());
+        clienteModel.setSaldo(clienteDto.getSaldo());
 
         return clienteModel;
     }
