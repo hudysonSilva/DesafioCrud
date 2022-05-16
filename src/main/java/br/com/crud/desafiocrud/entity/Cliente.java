@@ -17,6 +17,7 @@ public class Cliente {
 
     @Column(name = "cpf")
     private String cpf;
+    //
 
     @Column(name = "nm_nome")
     private String nome;
