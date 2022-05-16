@@ -30,7 +30,7 @@ public class ClienteController {
         Cliente clienteModel = clienteService.fromNewDto(clienteDto);
         clienteService.create(clienteModel);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(clienteModel.getIdCliente()).toUri();
-        return ResponseEntity.created(uri).build();
+        return ResponseEntity.created(uri).body(clienteModel);
 
         // status(HttpStatus.CREATED).body(endpoint);
     }

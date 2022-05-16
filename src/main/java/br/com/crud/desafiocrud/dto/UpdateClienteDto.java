@@ -20,6 +20,9 @@ public class UpdateClienteDto {
 
     private String dataNascimento;
 
+
+    //RENDA , Patrimonio, Celular
+
     public UpdateClienteDto(){}
 
     public UpdateClienteDto(String nome, String email, String dataNascimento){
