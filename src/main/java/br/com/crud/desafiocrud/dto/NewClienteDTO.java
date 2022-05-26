@@ -3,8 +3,6 @@ package br.com.crud.desafiocrud.dto;
 import br.com.crud.desafiocrud.services.validation.ClienteInsert;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.br.CPF;
-
-import javax.persistence.Column;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
@@ -27,12 +25,15 @@ public class NewClienteDTO {
     @NotBlank(message = "Preenchimento obrigatorio")
     private String email;
 
+    @NotBlank(message = "Preenchimento obrigatorio")
     private String dataNascimento;
 
+    @NotBlank(message = "Preenchimento obrigatorio")
     private Double renda;
 
     private Double patrimonio;
 
+    @NotBlank(message = "Preenchimento obrigatorio")
     private String celular;
 
     private Integer agencia;

@@ -7,48 +7,39 @@ import java.util.Date;
 
 @Entity
 @Table(name = "TB_CLIENTE")
-public class Cliente {
+public class Cliente{
 
     @Id
     @Column(name = "id_cliente")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sq_cliente")
     @SequenceGenerator(name = "sq_cliente", initialValue = 1, allocationSize = 1)
     private Integer idCliente;
-
     @Column(name = "cpf")
     private String cpf;
-    //
-
     @Column(name = "nm_nome")
     private String nome;
-
     @Column(name = "email", unique = true)
     private String email;
-
     @Column(name = "dt_data")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private Date dataNascimento;
-
     @Column
     private Double renda;
-
     @Column
     private Double patrimonio;
-
     @Column
     private String celular;
-
     @Column
     private Integer agencia;
-
     @Column
     private Integer conta;
-
     @Column
     private String senha;
-
     @Column
     private Double saldo;
+
+
+   // private Pix pix; // sem anotation mesmo
 
     public Cliente() {
     }
