@@ -1,12 +1,17 @@
 package br.com.crud.desafiocrud.services;
 
 import br.com.crud.desafiocrud.dto.NewPixDTO;
+import br.com.crud.desafiocrud.dto.UpdatePixDto;
+import br.com.crud.desafiocrud.entity.Pix;
 import br.com.crud.desafiocrud.entity.Pix;
 import br.com.crud.desafiocrud.repositories.PixRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -65,10 +70,16 @@ public class PixService {
         pixModel.setEmail(pixDto.getEmail());
         pixModel.setAleatoria(pixDto.getAleatoria());
         pixModel.setTelefone(pixDto.getTelefone());
-
-//
         return pixModel;
     }
 
+    public Pix fromUpdateDto (UpdatePixDto updatePixDto){
 
+
+        Pix pixModel = new Pix();
+        pixModel.setEmail(updatePixDto.getEmail());
+        pixModel.setTelefone(updatePixDto.getTelefone());
+        return pixModel;
+    }
 }
+

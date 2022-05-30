@@ -2,6 +2,7 @@ package br.com.crud.desafiocrud.entity;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 
 
 @Entity
@@ -17,7 +18,7 @@ public class Pix {
     @Column
     private String cpf;
 
-    @Column
+    @Pattern(regexp = "^([\\w\\-]+\\.)*[\\w\\- ]+@([\\w\\- ]+\\.)+([\\w\\-]{2,3})$", message = "E-mail inválido!")
     private String email;
 
     @Column
@@ -25,8 +26,6 @@ public class Pix {
 
     @Column
     private String aleatoria;
-
-
 
 
     public Pix() {

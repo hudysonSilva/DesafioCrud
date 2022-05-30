@@ -28,11 +28,9 @@ public class NewClienteDTO {
     @NotBlank(message = "Preenchimento obrigatorio")
     private String dataNascimento;
 
-
     private Double renda;
 
     private Double patrimonio;
-
 
     private String celular;
 
@@ -43,8 +41,6 @@ public class NewClienteDTO {
     private String senha;
 
     private Double saldo;
-
-
 
     public NewClienteDTO() {
     }

@@ -1,15 +1,17 @@
 package br.com.crud.desafiocrud.dto;
 
 import br.com.crud.desafiocrud.services.validation.ClienteInsert;
+import br.com.crud.desafiocrud.services.validation.PixInsert;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.br.CPF;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
 
-@ClienteInsert
+@PixInsert
 public class NewPixDTO {
 
+    @CPF
     private String cpf;
     private String email;
     private String telefone;
