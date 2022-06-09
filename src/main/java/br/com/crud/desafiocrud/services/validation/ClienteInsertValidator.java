@@ -119,6 +119,7 @@ public class ClienteInsertValidator implements ConstraintValidator<ClienteInsert
             erros.add(new FieldMessage("cpf", "CPF já existente"));
         }
 
+        /*
         //Validacao de nome
       String[] splitNome = objDto.getNome().toUpperCase(Locale.ROOT).split("\\s");
         for (int i = 0; splitNome.length > i; i++) {
@@ -126,6 +127,8 @@ public class ClienteInsertValidator implements ConstraintValidator<ClienteInsert
                 erros.add(new FieldMessage("nome", "ERRO NO NOME"));
             }
         }
+        */
+
 
         for (FieldMessage e : erros) {
             context.disableDefaultConstraintViolation();

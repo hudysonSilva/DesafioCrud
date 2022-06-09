@@ -101,6 +101,7 @@ public class ClienteUpdateValidator implements ConstraintValidator<ClienteUpdate
 
         List<FieldMessage> erros = new ArrayList<>();
 
+        /*
         //Validação de data e maior idade
         if (!objDto.getDataNascimento().matches("[0-9]{1,2}/[0-9]{1,2}/[0-9]{4,4}")){
             erros.add(new FieldMessage("dataNascimento", "Data com formato incorreto"));
@@ -110,6 +111,8 @@ public class ClienteUpdateValidator implements ConstraintValidator<ClienteUpdate
         } else if (idade < 18) {
             erros.add(new FieldMessage("dataNascimento", "Insira idade maior que 18 anos"));
         }
+
+         */  //COM ESSE TRECHO O CONSOLE IMPRIME DATA DE NASCIMENTO E NÂO PERSISTE
 
 //        String[] splitNome = objDto.getNome().toUpperCase(Locale.ROOT).split("\\s");
 //
