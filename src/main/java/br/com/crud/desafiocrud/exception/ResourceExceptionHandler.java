@@ -1,4 +1,4 @@
-package br.com.crud.desafiocrud.controllers.exception;
+package br.com.crud.desafiocrud.exception;
 
 import br.com.crud.desafiocrud.services.exception.DataIntegrityException;
 import org.hibernate.ObjectNotFoundException;

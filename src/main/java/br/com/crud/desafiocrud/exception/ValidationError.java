@@ -1,4 +1,4 @@
-package br.com.crud.desafiocrud.controllers.exception;
+package br.com.crud.desafiocrud.exception;
 
 import java.util.ArrayList;
 import java.util.List;

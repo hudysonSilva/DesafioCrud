@@ -1,7 +1,7 @@
 package br.com.crud.desafiocrud.services.validation;
 
 
-import br.com.crud.desafiocrud.controllers.exception.FieldMessage;
+import br.com.crud.desafiocrud.exception.FieldMessage;
 import br.com.crud.desafiocrud.dto.UpdateClienteDto;
 import br.com.crud.desafiocrud.entity.Cliente;
 import br.com.crud.desafiocrud.repositories.ClienteRepository;

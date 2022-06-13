@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-@Table(name = "TB_EMAIL")
+@Table(name = "RF_EMAIL")//Robo de fila
 public class Email implements Serializable {
     private static final long serialVersionUID = 1L;
 

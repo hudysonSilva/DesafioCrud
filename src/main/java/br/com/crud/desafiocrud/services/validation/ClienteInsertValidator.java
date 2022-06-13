@@ -1,7 +1,7 @@
 package br.com.crud.desafiocrud.services.validation;
 
 
-import br.com.crud.desafiocrud.controllers.exception.FieldMessage;
+import br.com.crud.desafiocrud.exception.FieldMessage;
 import br.com.crud.desafiocrud.dto.NewClienteDTO;
 import br.com.crud.desafiocrud.entity.Cliente;
 import br.com.crud.desafiocrud.repositories.ClienteRepository;
@@ -119,7 +119,7 @@ public class ClienteInsertValidator implements ConstraintValidator<ClienteInsert
             erros.add(new FieldMessage("cpf", "CPF já existente"));
         }
 
-        /*
+
         //Validacao de nome
       String[] splitNome = objDto.getNome().toUpperCase(Locale.ROOT).split("\\s");
         for (int i = 0; splitNome.length > i; i++) {
@@ -127,7 +127,7 @@ public class ClienteInsertValidator implements ConstraintValidator<ClienteInsert
                 erros.add(new FieldMessage("nome", "ERRO NO NOME"));
             }
         }
-        */
+
 
 
         for (FieldMessage e : erros) {

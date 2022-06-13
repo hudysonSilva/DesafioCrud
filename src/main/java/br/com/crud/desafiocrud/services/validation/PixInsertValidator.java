@@ -1,6 +1,6 @@
 package br.com.crud.desafiocrud.services.validation;
 
-import br.com.crud.desafiocrud.controllers.exception.FieldMessage;
+import br.com.crud.desafiocrud.exception.FieldMessage;
 import br.com.crud.desafiocrud.dto.NewPixDTO;
 import br.com.crud.desafiocrud.entity.Pix;
 import br.com.crud.desafiocrud.repositories.PixRepository;
